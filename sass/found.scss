@@ -1,0 +1,153 @@
+
+// define breakpoint 
+
+
+   @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1080px) { @content ; }
+  }
+   @else if $point == tab-land {
+     @media (min-width: 1023px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 767px) { @content ; }
+  }
+  @else if $point == i6-land {
+     @media (min-width: 667px) { @content ; }
+  }
+  @else if $point == i6 {
+     @media (min-width: 374px) { @content ; }
+  }
+   @else if $point == i5-land {
+     @media (min-width: 567px)  { @content ; }
+  }
+  @else if $point == i5 {
+     @media (max-width: 320px)  { @content ; }
+
+  }
+}
+
+
+// <!-- breakpoint end -->
+
+.start-order {
+  font-size: 12px;
+  text-align: right;
+  
+
+  .fa-map-marker {
+    position:relative;
+    top: 10px;
+  }
+}
+
+
+
+.secondary-head {
+  background: #e3e3e3;
+  padding:10px;
+}
+
+.row .first-nav {
+  margin-top: 0px;
+  padding: 11px;
+}
+
+.menu, .specials, .rewards {
+  font-size: 12px;
+  @include breakpoint(tablet) {
+    font-size: 20px;
+  }
+   @include breakpoint(tab-land) {
+    font-size: 25px;
+  }
+  @include breakpoint(desktop) {
+    font-size: 30px;
+  }
+}
+
+.side-menu {
+  padding: 10px;
+}
+
+.move-image {
+  position: absolute;
+  top: 0px;
+  @include breakpoint(tablet) {
+    top:10px;
+  }
+  @include breakpoint(desktop) {
+    left: 92px;
+  }
+}
+@include breakpoint(tablet) {
+  .first-header {
+    display: none;
+  }
+  .hide-tablet {
+    display: none;
+  }
+}
+.primary-header {
+display:none;
+@include breakpoint(tablet) {
+  display: block;
+  padding:10px 0;
+  // margin-bottom:-10px;
+}
+@include breakpoint(desktop) {
+  padding: 20px;
+}
+}
+
+.caret {
+  position: absolute;
+  top:9px;
+  right: 65%;
+}
+
+.caret-1 {
+  position: absolute;
+  top:9px;
+  right: 24%;
+}
+
+.message {
+  position: relative;
+  top: 0px;
+  @include breakpoint(tab-land) {
+    
+    top:10px;
+  }
+}
+
+.hide-mobile {
+  display:none;
+  @include breakpoint(tablet) {
+    display: block;
+    @include breakpoint(desktop) {
+      display:none;
+    }
+  }
+}
+
+.promo {
+  display: none;
+  @include breakpoint(tab-land) {
+    display: block;
+  }
+}
+
+.big-pic {
+  display: none;
+  @include breakpoint(desktop) {
+    display: block;
+  }
+}
+
+.utility {
+  display: none;
+  @include breakpoint(desktop) {
+    display: block;
+  }
+}
