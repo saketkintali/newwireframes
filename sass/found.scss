@@ -84,7 +84,7 @@
 
  .move-image {
   position: absolute;
-  // top: 0px;
+  margin-top: -71px;
   @include breakpoint(tablet) {
     margin-top: -78px;
   }

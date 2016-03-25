@@ -37,7 +37,8 @@
   padding: 10px; }
 
 .move-image {
-  position: absolute; }
+  position: absolute;
+  margin-top: -71px; }
   @media (min-width: 767px) {
     .move-image {
       margin-top: -78px; } }
