@@ -25,18 +25,30 @@
     .menu, .specials, .rewards {
       font-size: 30px; } }
 
+@media (min-width: 1080px) {
+  .rewards {
+    margin-left: -5%; } }
+
+@media (min-width: 1023px) {
+  .specials {
+    margin-left: 3%; } }
+
 .side-menu {
   padding: 10px; }
 
 .move-image {
-  position: absolute;
-  top: 0px; }
+  position: absolute; }
   @media (min-width: 767px) {
     .move-image {
-      top: 10px; } }
+      margin-top: -78px; } }
+  @media (min-width: 1023px) {
+    .move-image {
+      margin-top: -57px;
+      margin-left: 14px; } }
   @media (min-width: 1080px) {
     .move-image {
-      left: 92px; } }
+      margin-top: -5%;
+      margin-left: 5%; } }
 
 @media (min-width: 767px) {
   .first-header {
@@ -62,7 +74,15 @@
 .caret-1 {
   position: absolute;
   top: 9px;
-  right: 24%; }
+  right: 24%;
+  -webkit-transition: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.15s ease-in; }
+
+.active .caret-1 {
+  -webkit-transition: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.15s ease-in; }
 
 .message {
   position: relative;
@@ -84,7 +104,11 @@
   display: none; }
   @media (min-width: 1023px) {
     .promo {
+      margin-right: 5%;
       display: block; } }
+  @media (min-width: 1080px) {
+    .promo {
+      margin-right: -1%; } }
 
 .big-pic {
   display: none; }
@@ -96,4 +120,8 @@
   display: none; }
   @media (min-width: 1080px) {
     .utility {
-      display: block; } }
+      display: block;
+      margin-left: 5%; } }
+
+.sign-bar {
+  display: none; }

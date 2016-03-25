@@ -66,20 +66,39 @@
   }
 }
 
+.rewards {
+  @include breakpoint(desktop) {
+    margin-left: -5%;
+  }
+}
+
+.specials {
+ 
+   @include breakpoint(tab-land) {
+    margin-left: 3%;
+  }
+}
 .side-menu {
   padding: 10px;
 }
 
-.move-image {
+ .move-image {
   position: absolute;
-  top: 0px;
+  // top: 0px;
   @include breakpoint(tablet) {
-    top:10px;
+    margin-top: -78px;
+  }
+  @include breakpoint(tab-land) {
+    margin-top: -57px;
+    margin-left: 14px;
   }
   @include breakpoint(desktop) {
-    left: 92px;
+       margin-top: -5%;
+    margin-left: 5%;
   }
 }
+
+
 @include breakpoint(tablet) {
   .first-header {
     display: none;
@@ -88,6 +107,13 @@
     display: none;
   }
 }
+
+// .sign-bar .move-image {
+//   position:relative;
+//    @include breakpoint(desktop) {
+//     left: 92px;
+//   }
+// }
 .primary-header {
 display:none;
 @include breakpoint(tablet) {
@@ -110,6 +136,17 @@ display:none;
   position: absolute;
   top:9px;
   right: 24%;
+
+     -webkit-transition: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 0.15s ease-in;
+}
+
+.active .caret-1 {
+
+     -webkit-transition: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+    -webkit-transition: -webkit-transform 0.15s ease-in;
 }
 
 .message {
@@ -134,7 +171,11 @@ display:none;
 .promo {
   display: none;
   @include breakpoint(tab-land) {
+    margin-right: 5%;
     display: block;
+  }
+  @include breakpoint(desktop) {
+    margin-right: -1%;
   }
 }
 
@@ -149,5 +190,10 @@ display:none;
   display: none;
   @include breakpoint(desktop) {
     display: block;
+    margin-left: 5%;
   }
+}
+
+.sign-bar {
+  display: none;
 }
