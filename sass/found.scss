@@ -84,7 +84,7 @@
 
  .move-image {
   position: absolute;
-  margin-top: -71px;
+  margin-top: -71px;  
   @include breakpoint(tablet) {
     margin-top: -78px;
   }
@@ -149,6 +149,39 @@ display:none;
     -webkit-transition: -webkit-transform 0.15s ease-in;
 }
 
+.arrow-down {
+   position: absolute;
+   margin-top: -9px;
+   margin-left: 47px;
+     // -webkit-transition: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 0.25s ease-in;
+
+}
+
+.active  .arrow-down {
+    // -webkit-transition: rotate(180deg);
+    margin-top: -9px;
+    margin-left: 47px;
+  -webkit-transform: rotate(180deg);
+    -webkit-transition: -webkit-transform 0.25s ease-in;
+}
+
+.button.large.franchise {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 46px;
+  width: 103%;
+}
+
+.list {
+  margin-top: -15px;
+  background: #e3e3e3;
+  max-width: 258px;
+  padding: 10px;
+padding-left: 0px;
+  font-size: 14px;
+}
 .message {
   position: relative;
   top: 0px;
@@ -194,6 +227,91 @@ display:none;
   }
 }
 
-.sign-bar {
+.sign-bar, .list {
   display: none;
+}
+
+.list ul {
+  list-style: none;
+}
+
+footer {
+  padding-top: 20px;
+  background: #C0C0C0;
+}
+
+// .image-hold span {
+//   display: inline-block;
+// }
+
+.legal {
+  font-size: 14px;
+  text-align: center;
+}
+
+.custom {
+  font-size: 14px;
+}
+
+.list-1 {
+  font-size :14px;
+  list-style: none;
+  
+  text-align: center;
+
+  @include breakpoint(tablet) {
+    font-size: 14px;
+  }
+  // @include breakpoint(desktop) {
+  //   font-size: 16px;
+  // }
+}
+
+.list-1 li {
+  @include breakpoint(tablet) {
+    float: left;
+    display: inline-block;
+  
+    padding:10px;
+  }
+}
+
+.privacy {
+  @include breakpoint(tablet) {
+    margin-left: 13%;
+  }
+  @include breakpoint(tab-land) {
+    margin-left: 0;
+  }
+}
+
+.dropdown {
+  @include breakpoint(tab-land) {
+    margin-left: 20%;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 0%;
+  }
+}
+
+.main-content {
+  padding: 25px;
+  height:100%;
+}
+
+.connect {
+  width: 82%;
+  text-align: center;
+}
+
+.social-icon span {
+  padding:10px;
+  margin-left: 5px;
+}
+
+.social-icon {
+  background: #ffffff;
+  width: 90%;
+  margin-left: 0;
+  padding: 9px;
 }

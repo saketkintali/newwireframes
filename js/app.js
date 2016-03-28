@@ -104,3 +104,11 @@ $(document).ready(function(){
          $('.sign-in').removeClass("active");
     });
 });
+
+$(document).ready(function(){
+    $(".franchise").click(function(){
+        $(".list").toggle();
+         $(this).toggleClass("active");
+    });
+});
+
