@@ -17,7 +17,7 @@
   padding: 11px; }
 
 .menu, .specials, .rewards {
-  font-size: 12px; }
+  font-size: 15px; }
   @media (min-width: 767px) {
     .menu, .specials, .rewards {
       font-size: 20px; } }
@@ -97,6 +97,16 @@
   @media (min-width: 567px) {
     .arrow-down {
       margin-left: 20px; } }
+
+.fa-outdent {
+  -webkit-transition: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.45s ease-in; }
+
+.is-open-right .fa-outdent {
+  -webkit-transition: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.45s ease-in; }
 
 .active .arrow-down {
   margin-top: -9px;
@@ -270,25 +280,28 @@ footer {
     margin-left: 0; } }
 
 @media (max-width: 320px) {
-  .dropdown-1 {
+  .list-1 .dropdown-1 {
     margin-left: 10%; } }
 @media (min-width: 374px) {
-  .dropdown-1 {
+  .list-1 .dropdown-1 {
     margin-left: 10%; } }
 @media (min-width: 567px) {
-  .dropdown-1 {
+  .list-1 .dropdown-1 {
     width: 35%;
     margin-left: 0%; } }
 @media (min-width: 1023px) {
-  .dropdown-1 {
-    margin-left: 20%; } }
+  .list-1 .dropdown-1 {
+    margin-left: 38%;
+    width: 20%; } }
 @media (min-width: 1080px) {
-  .dropdown-1 {
-    float: right; } }
+  .list-1 .dropdown-1 {
+    float: right !important;
+    width: 20%;
+    margin-right: -6%;
+    margin-top: -43px; } }
 
 .main-content {
-  padding: 25px;
-  height: 100%; }
+  padding: 10px; }
 
 .connect {
   width: 81%;
@@ -313,6 +326,9 @@ footer {
       width: 62%;
       text-align: left;
       font-size: 20px; } }
+  @media (min-width: 1080px) {
+    .connect {
+      font-size: 24px; } }
 
 .icon-place {
   width: 65%; }
@@ -408,12 +424,10 @@ footer {
       margin-right: 6%; } }
 
 .social-icon-1 span {
-  margin-left: -39%;
-  margin-right: 48%; }
+  margin-right: 16%; }
   @media (min-width: 374px) {
     .social-icon-1 span {
-      margin-left: -18%;
-      margin-right: 25%; } }
+      margin-right: 15%; } }
   @media (min-width: 567px) {
     .social-icon-1 span {
       margin-left: 69%;
@@ -437,3 +451,63 @@ footer {
   .medium-6.offers {
     width: 61%;
     margin-right: -5%; } }
+
+.main p {
+  font-size: 14px;
+  line-height: 0.6; }
+
+div.line {
+  border-left: 1px solid black;
+  height: 109px;
+  margin-left: 10px;
+  margin-top: 6px; }
+
+div.line-1 {
+  border-right: 1px solid black;
+  height: 97px;
+  margin-right: -5px; }
+
+.body-icon {
+  margin-top: 25px; }
+
+.text-or {
+  margin-left: 0px;
+  padding: 7px 0px; }
+
+.main .sub-info {
+  line-height: 1.6; }
+
+.fa-google-plus {
+  font-size: 13px !important; }
+
+.fa-facebook {
+  font-size: 24px !important; }
+
+.side-menu .small-12 {
+  margin-bottom: 8px; }
+
+.extras {
+  margin-left: 10px; }
+
+.main-item {
+  font-size: 12px; }
+  @media (min-width: 374px) {
+    .main-item {
+      font-size: 14px; } }
+  @media (min-width: 414px) {
+    .main-item {
+      font-size: 16px; } }
+  .main-item .columns {
+    border-right: 1px solid black; }
+  .main-item .columns:last-child {
+    border: none; }
+
+.main-content h1 {
+  margin-top: 15px; }
+
+.value {
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: red;
+  padding: 5px; }
