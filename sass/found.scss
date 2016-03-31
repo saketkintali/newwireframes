@@ -37,21 +37,47 @@
 // <!-- breakpoint end -->
 
 .start-order {
-  font-size: 12px;
+  font-size: 11px;
   text-align: right;
-  
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 5px;
+  padding-right: 18px;
+  @include breakpoint(i5-land) {
+    font-size:14px;
+    padding: 10px;
+  }
+  }
 
-  .fa-map-marker {
+ .start-order .fa-map-marker {
     position:relative;
     top: 10px;
     @include breakpoint(i5-land) {
       top: 0px;
     }
   }
+
+
+.shop-cart {
+  height: 42px;
+ 
+  padding:8px;
+  border-right: 1px solid black;
+  @include breakpoint(i5-land) {
+    padding: 7px;
+    font-size:20px;
+    padding-left:23px;
+  }
 }
 
+.arrow {
+  padding: 6px;
+  padding-left: 10px;
 
-
+  @include breakpoint(i5-land) {
+    padding-left: 25px;
+  }
+}
 .secondary-head {
   background: #e3e3e3;
   padding:10px;
@@ -59,7 +85,7 @@
 
 .row .first-nav {
   margin-top: 0px;
-  padding: 11px;
+  padding: 0px;
 }
 
 .menu, .specials, .rewards {
@@ -639,6 +665,21 @@ div.line-1 {
   border-right: 1px solid black;
      height: 97px;
     margin-right: -5px;
+    @include breakpoint(i6) {
+      margin-right: -1px;
+    }
+       @include breakpoint(plus) {
+      margin-right: 2px;
+       height: 86px;
+    }
+    @include breakpoint(i6-land) {
+      margin-right: 12px;
+      height: 83px;
+    }
+
+     @include breakpoint(plus-land) {
+      margin-right: 17px;
+    }
   
 }
 
@@ -659,7 +700,7 @@ div.line-1 {
   font-size: 13px !important;
 }
 
-.fa-facebook {
+.body-icon .fa-facebook {
   font-size:24px !important;
 }
 
@@ -700,4 +741,81 @@ div.line-1 {
   border-radius: 50%;
   background: red;
   padding:5px;
+}
+
+
+.pick.row .subheader {
+  font-size: 15px;
+}
+
+
+
+.start-order-1 {
+  font-size: 10px;
+  text-align: right;
+  border-right: 1px solid black;
+  padding-top: 6px;
+}
+
+ .start-order-1 .fa-map-marker {
+  position: relative;
+  top: 8px;
+  font-size: 14px;
+  }
+
+
+.sub-message {
+  float: left;
+  margin-left: 18px;
+  text-decoration: underline;
+  font-size: 11px;
+ 
+  @include breakpoint(i6) {
+    margin-left: 33%;
+  }
+
+   @include breakpoint(plus) {
+    margin-left: 40%;
+  }
+   @include breakpoint(i5-land) {
+    margin-left: 59%;
+  }
+    @include breakpoint(i6-land) {
+    margin-left: 49%;
+  }
+   @include breakpoint(plus-land) {
+    margin-left: 54%;
+  }
+}
+
+.shop-cart-1 {
+  padding-top: 8px;
+  border-right: 1px solid black;
+  height: 54px;
+  padding-left: 16px;
+  font-size: 24px;
+
+  @include breakpoint(i5-land) {
+    padding-left: 28px;
+    font-size: 27px;
+  
+  
+  }
+}
+
+.arrow-1 {
+  padding-top: 10px;
+  padding-left: 11px;
+  @include breakpoint(i5-land) {
+    font-size: 21px;
+  }
+}
+
+.favorite-section {
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.fav-heart {
+  padding: 10px;
 }
