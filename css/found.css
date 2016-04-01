@@ -147,7 +147,8 @@
   font-size: 16px;
   padding-left: 20px;
   padding-right: 46px;
-  width: 103%; }
+  width: 103%;
+  height: 50px; }
   @media (min-width: 374px) {
     .button.large.franchise {
       width: 86%;
@@ -180,12 +181,55 @@
       margin-left: -31%; } }
 
 .list {
-  padding: 10px;
   padding-left: 0px;
-  font-size: 14px; }
+  font-size: 16px;
+  margin-top: 13px;
+  background: #F0F0F0; }
   .list ul li {
     width: 151%;
     margin-left: -43%; }
+  @media (max-width: 320px) {
+    .list {
+      padding: 0px;
+      width: 137%;
+      margin-left: -11%; } }
+  @media (min-width: 374px) {
+    .list {
+      width: 138%;
+      margin-left: -12%; } }
+  @media (min-width: 667px) {
+    .list {
+      width: 149%;
+      margin-left: -15%; } }
+  @media (min-width: 414px) {
+    .list {
+      width: 132%;
+      margin-left: -10%; } }
+  @media (min-width: 567px) {
+    .list {
+      padding: 0px;
+      width: 150%;
+      margin-left: -16%;
+      padding-left: 10px; } }
+  @media (min-width: 735px) {
+    .list {
+      width: 152%;
+      margin-left: -16%;
+      padding-left: 12px; } }
+  @media (min-width: 767px) {
+    .list {
+      padding: 5px;
+      padding-left: 13px;
+      font-size: 16px;
+      width: 149%; } }
+  @media (min-width: 1023px) {
+    .list {
+      width: 145%; } }
+  @media (min-width: 1080px) {
+    .list {
+      width: 135%;
+      margin-left: -11%;
+      font-size: 17px; } }
 
 .message {
   position: relative;
@@ -469,10 +513,12 @@ footer {
 
 @media (min-width: 667px) {
   .medium-6.offers {
-    width: 100%; } }
+    width: 100%;
+    margin-top: 26px; } }
 @media (min-width: 735px) {
   .medium-6.offers {
-    width: 50%; } }
+    width: 50%;
+    margin-top: 0; } }
 @media (min-width: 1023px) {
   .medium-6.offers {
     width: 61%;
@@ -499,6 +545,9 @@ div.line-1 {
     div.line-1 {
       margin-right: 2px;
       height: 86px; } }
+  @media (min-width: 567px) {
+    div.line-1 {
+      margin-right: 13px; } }
   @media (min-width: 667px) {
     div.line-1 {
       margin-right: 12px;
