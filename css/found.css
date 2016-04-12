@@ -1,7 +1,6 @@
 .start-order {
   font-size: 11px;
   text-align: right;
-  border-left: 1px solid black;
   border-right: 1px solid black;
   padding: 5px;
   padding-right: 18px; }
@@ -42,16 +41,24 @@
   margin-top: 0px;
   padding: 0px; }
 
-.menu, .specials, .rewards {
+.menu,
+.specials,
+.rewards {
   font-size: 15px; }
   @media (min-width: 767px) {
-    .menu, .specials, .rewards {
+    .menu,
+    .specials,
+    .rewards {
       font-size: 20px; } }
   @media (min-width: 1023px) {
-    .menu, .specials, .rewards {
+    .menu,
+    .specials,
+    .rewards {
       font-size: 25px; } }
   @media (min-width: 1080px) {
-    .menu, .specials, .rewards {
+    .menu,
+    .specials,
+    .rewards {
       font-size: 30px; } }
 
 @media (min-width: 1080px) {
@@ -288,7 +295,8 @@
       display: block;
       margin-left: 5%; } }
 
-.sign-bar, .list {
+.sign-bar,
+.list {
   display: none; }
 
 .list ul {
@@ -660,3 +668,61 @@ div.line-1 {
 
 .fav-heart {
   padding: 10px; }
+
+.line-gap {
+  border-top: 1px solid black;
+  margin-top: 10px; }
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  background: #0099FF;
+  padding-right: 16px; }
+  @media (min-width: 567px) {
+    .circle {
+      width: 32px;
+      padding-right: 0px; } }
+  @media (min-width: 667px) {
+    .circle {
+      padding-left: 10px; } }
+
+.circle-1 {
+  background: none; }
+
+.circle-2 {
+  background: #00CC00; }
+
+.increment {
+  margin-bottom: 10px;
+  margin-left: -12px;
+  margin-top: -7px; }
+  @media (min-width: 567px) {
+    .increment {
+      margin-left: 17px; } }
+
+.account-info {
+  margin-top: -9px;
+  margin-bottom: -11px; }
+
+.log-in-form li {
+  list-style: none; }
+
+.fb-login {
+  margin-bottom: -20px; }
+
+.papa-info {
+  margin-left: -20%; }
+
+.profile-info {
+  margin-left: -52%;
+  width: 200%; }
+
+.fb-info {
+  margin-top: 70px; }
+
+.edit-info {
+  margin-top: 30px; }
+
+.continue-button {
+  margin-top: 20px;
+  margin-bottom: 50px; }

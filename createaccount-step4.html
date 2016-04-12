@@ -19,7 +19,7 @@
       <div class="off-canvas position-right" data-off-canvas="" data-position="right" id="offCanvasRight">
         <div class="row side-menu">
           <div class="small-12 columns">
-            <a href="#"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
+            <a href="sign-in.html"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
           </div>
           <hr>
           <div class="small-12 columns">
@@ -150,57 +150,31 @@
         </nav>
         <!-- end of header-->
         <section class="main-content">
-          <div class="main row">
-           <div class="small-12 columns">
-              <h2>SIGN IN</h2>
-            <p>Already have an account</p>
-           </div> 
-          
-          <div class="main-divide">
-            <div class="small-7 columns">
-               <form>
-                
-                 
-                  <label>Email
-                    <input type="text">
-                  </label>
-                  <label>Password
-                    <input type="text">
-                  </label>
-                  <input id="show-password" type="checkbox"><label for="show-password">Remember me</label>
-                  <button class="button small">Sign In</button>
-                  <p><a href="#">Forgot password?</a></p>   
-                
-              </form>
-
+          <div class="row main-head">
+            <h3>Create an Account</h3>
+            <hr>
+            <div class="small-12 columns increment">
+              <div class="small-1 small-push-1 columns circle circle-2" onclick="return page1()">1</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle circle-2" onclick="return page2()">2</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle circle-2" onclick="return page3()">3</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle end">4</div>
             </div>
-
-            <div class="small-1 columns">
-              <div class="small-12 columns line"></div>
-              <div class="small-12 columns text-or">Or</div>
-              <div class="small-12 columns line-1"></div>
-            </div>
-
-            <div class="small-4 columns body-icon">
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-facebook"></i></button>
+            <hr>
+            <p class="account-info"><strong>Step 4: Submit</strong></p>
+            <hr>
+            <form>
+              <div class="row column log-in-form">
+                <span class="small-1 columns"><input id="checkbox1" type="checkbox"></span>
+                <span class="small-11 columns end"><label for="checkbox1">Yes, I am 13 years of age or older and accept the Terms of Use</label></span>
               </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-google-plus"></i></button>
-              </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-twitter"></i></button>
-              </div>
+              <p><a type="submit" class="button medium">Create Acccount</a></p>
+            </form>
 
-            </div>
+
           </div>
-          <hr>
-          <div class="small-12 columns">
-            <p>Don't have an account yet?</p>
-            <button class="button medium" onclick="return page1()">Create an account</button>
-            <p class="sub-info">Creating a Papa John's account allows you to speed through checkout with saved delivery address, payment info and favorited items. Plus it's the only way to enroll in Papa Rewards to earn free pizaa!</p>
-          </div>
-        </div>
         </section>
         <footer>
 

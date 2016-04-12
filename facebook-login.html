@@ -19,7 +19,7 @@
       <div class="off-canvas position-right" data-off-canvas="" data-position="right" id="offCanvasRight">
         <div class="row side-menu">
           <div class="small-12 columns">
-            <a href="#"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
+            <a href="sign-in.html"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
           </div>
           <hr>
           <div class="small-12 columns">
@@ -150,57 +150,28 @@
         </nav>
         <!-- end of header-->
         <section class="main-content">
-          <div class="main row">
-           <div class="small-12 columns">
-              <h2>SIGN IN</h2>
-            <p>Already have an account</p>
-           </div> 
-          
-          <div class="main-divide">
-            <div class="small-7 columns">
-               <form>
-                
-                 
-                  <label>Email
-                    <input type="text">
-                  </label>
-                  <label>Password
-                    <input type="text">
-                  </label>
-                  <input id="show-password" type="checkbox"><label for="show-password">Remember me</label>
-                  <button class="button small">Sign In</button>
-                  <p><a href="#">Forgot password?</a></p>   
-                
-              </form>
-
+          <div class="row fb-login">
+             <div class="small-12 columns">
+              <span class="small-3 columns"> <button class="button small"><i class="fa fa-facebook"></i></button></span>
+              <span class="small-9 columns">Login in With Facebook</span>
             </div>
-
-            <div class="small-1 columns">
-              <div class="small-12 columns line"></div>
-              <div class="small-12 columns text-or">Or</div>
-              <div class="small-12 columns line-1"></div>
+            <hr>
+            <div class="small-6 small-centered columns fb-info">
+              <a href="#"><img alt="" src="http://placehold.it/100x90"></a>
+              <label class="papa-info">Papa John's will receive:</label>
+              <label class="profile-info">Your public profile, Friends list and email address</label>
             </div>
-
-            <div class="small-4 columns body-icon">
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-facebook"></i></button>
-              </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-google-plus"></i></button>
-              </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-twitter"></i></button>
-              </div>
-
+            <div class="small-9 small-centered columns edit-info">
+              <a href="#">
+                <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <span>Edit the info you provide</span>
+              </a>
             </div>
+            <button class=" button medium expanded continue-button">Continue as Jeannie</button>
+            
+              <p><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;
+               This does not let the app post to facebook</p>
           </div>
-          <hr>
-          <div class="small-12 columns">
-            <p>Don't have an account yet?</p>
-            <button class="button medium" onclick="return page1()">Create an account</button>
-            <p class="sub-info">Creating a Papa John's account allows you to speed through checkout with saved delivery address, payment info and favorited items. Plus it's the only way to enroll in Papa Rewards to earn free pizaa!</p>
-          </div>
-        </div>
         </section>
         <footer>
 

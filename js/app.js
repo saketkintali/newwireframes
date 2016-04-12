@@ -112,3 +112,15 @@ $(document).ready(function(){
     });
 });
 
+function page1() {
+    window.location.href="createaccount-step1.html"
+}
+function page2() {
+    window.location.href="createaccount-step2.html"
+}
+function page3() {
+    window.location.href="createaccount-step3.html"
+}
+function page4() {
+    window.location.href="createaccount-step4.html"
+}

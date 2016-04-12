@@ -19,7 +19,7 @@
       <div class="off-canvas position-right" data-off-canvas="" data-position="right" id="offCanvasRight">
         <div class="row side-menu">
           <div class="small-12 columns">
-            <a href="#"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
+            <a href="sign-in.html"><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><strong>SIGN IN</strong></a>
           </div>
           <hr>
           <div class="small-12 columns">
@@ -150,57 +150,87 @@
         </nav>
         <!-- end of header-->
         <section class="main-content">
-          <div class="main row">
-           <div class="small-12 columns">
-              <h2>SIGN IN</h2>
-            <p>Already have an account</p>
-           </div> 
-          
-          <div class="main-divide">
-            <div class="small-7 columns">
-               <form>
-                
-                 
-                  <label>Email
-                    <input type="text">
-                  </label>
-                  <label>Password
-                    <input type="text">
-                  </label>
-                  <input id="show-password" type="checkbox"><label for="show-password">Remember me</label>
-                  <button class="button small">Sign In</button>
-                  <p><a href="#">Forgot password?</a></p>   
-                
-              </form>
+          <div class="row main-head">
+            <h3>Create an Account</h3>
+            <hr>
+            <div class="small-12 columns increment">
+              <div class="small-1 small-push-1 columns circle circle-2" onclick="return page1()">1</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle">2</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle circle-1" onclick="return page3()">3</div>
+              <div class="small-2 small-push-1 column line-gap"></div>
+              <div class="small-1 small-push-1 columns circle circle-1 end" onclick="return page4()">4</div>
+            </div>
+            <hr>
+            <p class="account-info"><strong>Step 2: Papa Rewards</strong></p>
+            <hr>
+            <form>
+              <div class="row column log-in-form">
+                <fieldset class="small-12 columns">
+                  <div class="small-2 columns">
+                    <img alt="" src="http://placehold.it/98X71">
+                  </div>
+                  <div class="small-10 columns">
+                    <span>Earn 1 point for every $5 you send.</span>
+                    <fieldset>
+                      <input id="checkbox1" type="checkbox">
+                      <label for="checkbox1">Enroll me in Papa Rewards</label>
+                    </fieldset>
+                    <a href="#">Learn More</a>
+                  </div>
+                </fieldset>
+                <fieldset class="small-12 columns">
+                  <div class="small-2 columns">
+                    <img alt="" src="http://placehold.it/98X71">
+                  </div>
+                  <div class="small-10 columns">
+                    <span>Birthday Club</span>
+                    <fieldset>
+                      <span class="small-2 columns"><input id="checkbox1" type="checkbox"></span>
+                      <span class="small-10 columns"> <label for="checkbox1">Receive a special offer from Papa John's for your Birthday.</label></span>
+                    </fieldset>
+                    <fieldset>
+                      <span class="small-7 columns">
+                       <label>Month 
+                          <select>
+                             <option value="none"></option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">Febraury</option>
+                            <option value="March">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                             <option value="Jun">June</option>
+                              <option value="Jul">July</option>
+                               <option value="Aug">August</option>
+                                <option value="Sep">September</option>
+                                 <option value="Oct">October</option>
+                                  <option value="Nov">November</option>
+                                   <option value="Dec">December</option>
+                          </select>
+                       </label>
+                     </span>
+                      <span class="small-5 columns">
+                       <label>Date
+                          <select>
+                             <option value="none"></option>
+                           
+                          </select>
+                        </label>
+                     </span>
+                    </fieldset>
+
+                  </div>
+                  <p><a href="createaccount-step3.html" type="submit" class="button medium">Next&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </a></p>
+                </fieldset>
+
+
+            </form>
+
 
             </div>
-
-            <div class="small-1 columns">
-              <div class="small-12 columns line"></div>
-              <div class="small-12 columns text-or">Or</div>
-              <div class="small-12 columns line-1"></div>
-            </div>
-
-            <div class="small-4 columns body-icon">
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-facebook"></i></button>
-              </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-google-plus"></i></button>
-              </div>
-               <div class="small-12 columns">
-                <button class="button large"><i class="fa fa-twitter"></i></button>
-              </div>
-
-            </div>
-          </div>
-          <hr>
-          <div class="small-12 columns">
-            <p>Don't have an account yet?</p>
-            <button class="button medium" onclick="return page1()">Create an account</button>
-            <p class="sub-info">Creating a Papa John's account allows you to speed through checkout with saved delivery address, payment info and favorited items. Plus it's the only way to enroll in Papa Rewards to earn free pizaa!</p>
-          </div>
-        </div>
         </section>
         <footer>
 
@@ -289,19 +319,19 @@
             </div>
           </div>
         </footer>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="js/vendor/jquery.min.js">
-  </script>
-  <script src="js/vendor/what-input.min.js">
-  </script>
-  <script src="js/foundation.min.js">
-  </script>
-  <script src="js/app.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
-  </script>
+    <script src="js/vendor/jquery.min.js">
+    </script>
+    <script src="js/vendor/what-input.min.js">
+    </script>
+    <script src="js/foundation.min.js">
+    </script>
+    <script src="js/app.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+    </script>
 </body>
 
 </html>
