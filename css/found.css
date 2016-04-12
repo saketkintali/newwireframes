@@ -86,6 +86,10 @@
     .move-image {
       margin-top: -5%;
       margin-left: 5%; } }
+  @media (min-width: 1600px) {
+    .move-image {
+      margin-top: -3%;
+      margin-left: 25%; } }
 
 @media (min-width: 767px) {
   .first-header {

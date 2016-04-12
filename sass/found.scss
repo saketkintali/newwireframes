@@ -1,5 +1,10 @@
 // define breakpoint 
 @mixin breakpoint($point) {
+  @if $point==huge {
+    @media (min-width: 1600px) {
+      @content ;
+    }
+  }
   @if $point==desktop {
     @media (min-width: 1080px) {
       @content ;
@@ -142,6 +147,10 @@
   @include breakpoint(desktop) {
     margin-top: -5%;
     margin-left: 5%;
+  }
+  @include breakpoint(huge) {
+    margin-top: -3%;
+    margin-left: 25%;
   }
 }
 
