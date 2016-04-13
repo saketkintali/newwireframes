@@ -896,4 +896,4 @@ div.line-1 {
       display: block; } }
 
 .selected {
-  background: white; }
+  font-weight: bold; }
