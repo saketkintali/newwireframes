@@ -1,7 +1,7 @@
 .start-order {
   font-size: 11px;
   text-align: right;
-  border-right: 1px solid black;
+  border-right: 1px solid #dbdbdb;
   padding: 5px;
   padding-right: 18px; }
   @media (min-width: 567px) {
@@ -19,7 +19,7 @@
 .shop-cart {
   height: 42px;
   padding: 8px;
-  border-right: 1px solid black; }
+  border-right: 1px solid #dbdbdb; }
   @media (min-width: 567px) {
     .shop-cart {
       padding: 7px;
@@ -36,6 +36,14 @@
 .secondary-head {
   background: #e3e3e3;
   padding: 10px; }
+  @media (min-width: 1023px) {
+    .secondary-head {
+      padding-top: 12px;
+      padding-bottom: 0px; } }
+  @media (min-width: 1080px) {
+    .secondary-head {
+      padding-top: 20px;
+      padding-bottom: 10px; } }
 
 .row .first-nav {
   margin-top: 0px;
@@ -65,12 +73,28 @@
   .rewards {
     margin-left: -5%; } }
 
+@media (min-width: 767px) {
+  .specials {
+    margin-left: -3%; } }
 @media (min-width: 1023px) {
   .specials {
-    margin-left: 3%; } }
+    margin-left: 4%; } }
+@media (min-width: 1080px) {
+  .specials {
+    margin-left: 1%; } }
 
 .side-menu {
   padding: 10px; }
+
+@media (min-width: 1023px) {
+  .close-button {
+    right: -6rem; } }
+@media (min-width: 1080px) {
+  .close-button {
+    right: -3rem; } }
+@media (min-width: 1600px) {
+  .close-button {
+    right: 13%; } }
 
 .move-image {
   position: absolute;
@@ -85,11 +109,11 @@
   @media (min-width: 1080px) {
     .move-image {
       margin-top: -5%;
-      margin-left: 5%; } }
+      margin-left: 8%; } }
   @media (min-width: 1600px) {
     .move-image {
       margin-top: -3%;
-      margin-left: 25%; } }
+      margin-left: 26%; } }
 
 @media (min-width: 767px) {
   .first-header {
@@ -101,24 +125,34 @@
   display: none; }
   @media (min-width: 767px) {
     .primary-header {
-      display: block;
-      padding: 10px 0; } }
-  @media (min-width: 1080px) {
-    .primary-header {
-      padding: 20px; } }
+      display: block; } }
 
 .caret {
   position: absolute;
   top: 9px;
-  right: 65%; }
+  right: 68%; }
+  @media (min-width: 1080px) {
+    .caret {
+      top: 22px;
+      right: 69%; } }
 
 .caret-1 {
   position: absolute;
   top: 9px;
-  right: 24%;
+  right: 26%;
   -webkit-transition: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -webkit-transition: -webkit-transform 0.15s ease-in; }
+  @media (min-width: 767px) {
+    .caret-1 {
+      right: 36%; } }
+  @media (min-width: 1023px) {
+    .caret-1 {
+      right: 43%; } }
+  @media (min-width: 1080px) {
+    .caret-1 {
+      top: 22px;
+      right: 43%; } }
 
 .active .caret-1 {
   -webkit-transition: rotate(180deg);
@@ -284,7 +318,7 @@
       display: block; } }
   @media (min-width: 1080px) {
     .promo {
-      margin-right: -1%; } }
+      margin-right: 5%; } }
 
 .big-pic {
   display: none; }
@@ -297,7 +331,7 @@
   @media (min-width: 1080px) {
     .utility {
       display: block;
-      margin-left: 5%; } }
+      margin-left: -1%; } }
 
 .sign-bar,
 .list {
@@ -332,6 +366,9 @@ footer {
   @media (min-width: 767px) {
     .list-1 {
       font-size: 14px; } }
+  @media (min-width: 1080px) {
+    .list-1 {
+      margin-right: 7%; } }
 
 @media (min-width: 567px) {
   .list-1 li {
@@ -535,6 +572,9 @@ footer {
   .medium-6.offers {
     width: 61%;
     margin-right: -5%; } }
+@media (min-width: 1080px) {
+  .medium-6.offers {
+    margin-right: -3%; } }
 
 .main p {
   font-size: 14px;
@@ -592,6 +632,8 @@ div.line-1 {
 
 .main-item {
   font-size: 12px; }
+  .main-item a {
+    padding-left: 29px; }
   @media (min-width: 374px) {
     .main-item {
       font-size: 14px; } }
@@ -770,13 +812,15 @@ div.line-1 {
     .pick {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
+  @media (min-width: 767px) {
+    .pick {
+      padding-right: 0px;
+      padding-left: 6px;
+      width: 33.33333%; } }
   @media (min-width: 1080px) {
     .pick {
       padding-right: 0px;
       padding-left: 0px; } }
-  @media (min-width: 767px) {
-    .pick {
-      width: 33.33333%; } }
   .pick h2 {
     font-family: "Knockout 49 4r","HelveticaNeue-CondensedBold","Arial Narrow",Arial,sans-serif; }
     @media (min-width: 667px) {
@@ -805,7 +849,12 @@ div.line-1 {
 
 @media (min-width: 767px) {
   .pick:last-child {
-    float: left !important; } }
+    position: relative;
+    left: -67%; } }
+@media (min-width: 1080px) {
+  .pick:last-child {
+    position: static;
+    left: 0; } }
 
 .pick .subheader {
   font-size: 15px; }
@@ -814,7 +863,7 @@ div.line-1 {
       width: 57%; } }
   @media (min-width: 767px) {
     .pick .subheader {
-      width: 68%; } }
+      width: 62%; } }
   @media (min-width: 1080px) {
     .pick .subheader {
       font-size: 16px; } }
@@ -829,15 +878,36 @@ div.line-1 {
     margin-right: -11%; } }
 @media (min-width: 767px) {
   .pick .order-button {
-    margin-top: -82%;
-    margin-right: -16%; } }
+    margin-top: -48%;
+    margin-right: -10%;
+    width: 37%; } }
 @media (min-width: 1023px) {
   .pick .order-button {
-    margin-top: -42%;
-    margin-right: -22%; } }
+    margin-top: -31%;
+    margin-right: -12%; } }
 @media (min-width: 1080px) {
   .pick .order-button {
-    margin-top: -43%; } }
+    width: 45%;
+    margin-top: -42%; } }
+
+@media (min-width: 767px) {
+  .order-button.order-2 {
+    margin-top: -56%; } }
+@media (min-width: 1023px) {
+  .order-button.order-2 {
+    margin-top: -37%;
+    margin-right: -12%; } }
+@media (min-width: 1080px) {
+  .order-button.order-2 {
+    margin-top: -41%; } }
+
+@media (min-width: 1023px) {
+  .order-button.order-2.order-3 {
+    margin-top: -31%;
+    margin-right: -12%; } }
+@media (min-width: 1080px) {
+  .order-button.order-2.order-3 {
+    margin-top: -42%; } }
 
 @media (min-width: 667px) {
   .pick .order-button-1 {
@@ -850,22 +920,27 @@ div.line-1 {
     margin-right: -44%; } }
 @media (min-width: 767px) {
   .pick .order-button-1 {
-    margin-top: -48%;
-    margin-right: -12%;
+    margin-top: -31%;
+    margin-right: -17%;
     width: 33.3333%; } }
 @media (min-width: 1023px) {
   .pick .order-button-1 {
-    margin-top: -27%;
-    margin-right: -23%;
+    margin-top: -25%;
+    margin-right: -25%;
     width: 42.3333%; } }
 @media (min-width: 1080px) {
   .pick .order-button-1 {
     width: 50%;
-    margin-right: -30%; } }
+    margin-right: -26%;
+    margin-top: -27%; } }
 
 @media (min-width: 567px) {
   .pick .menu-image {
     width: 100%; } }
+@media (min-width: 767px) {
+  .pick .menu-image {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (min-width: 567px) {
   .pick .description {
@@ -874,6 +949,10 @@ div.line-1 {
   font-size: 14px;
   line-height: 0.6;
   text-decoration: underline; }
+@media (min-width: 767px) {
+  .pick .description {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (min-width: 767px) {
   .tab-port {
@@ -897,3 +976,66 @@ div.line-1 {
 
 .selected {
   font-weight: bold; }
+
+.user-message {
+  background: #f1f1f1;
+  margin-top: 15px;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  max-width: 1180px; }
+
+@media (min-width: 1023px) {
+  .dollar-sign {
+    margin-left: 13px; } }
+@media (min-width: 1080px) {
+  .dollar-sign {
+    margin-left: 26px; } }
+
+@media (min-width: 767px) {
+  .cart {
+    border-left: 1px solid #dbdbdb;
+    padding-top: 2px; } }
+@media (min-width: 1023px) {
+  .cart {
+    margin-right: 5%;
+    width: 20%;
+    padding-top: 7px;
+    height: 56px; }
+    .cart .zero-value {
+      font-size: 20px; } }
+@media (min-width: 1080px) {
+  .cart {
+    padding-top: 23px;
+    height: 84px;
+    border-right: 1px solid #dbdbdb; }
+    .cart .zero-value {
+      font-size: 25px; } }
+
+.order-start, .sign-in {
+  border-left: 1px solid #dbdbdb;
+  padding-top: 5px;
+  height: 57px; }
+  @media (min-width: 1080px) {
+    .order-start, .sign-in {
+      padding-top: 18px;
+      height: 85px; }
+      .order-start a, .sign-in a {
+        font-size: 18px; } }
+
+@media (min-width: 1023px) {
+  .sign-in {
+    width: 26%; } }
+
+.sign-in.active {
+  background: #dbdbdb; }
+
+.create-sign {
+  background: #dbdbdb; }
+
+@media (min-width: 767px) {
+  .your-order {
+    margin-left: 13%; } }
+@media (min-width: 1023px) {
+  .your-order {
+    margin-left: 16%; } }

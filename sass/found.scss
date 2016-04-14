@@ -57,7 +57,7 @@
   font-size: 11px;
   text-align: right;
   // border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-right: 1px solid #dbdbdb;
   padding: 5px;
   padding-right: 18px;
   @include breakpoint(i5-land) {
@@ -77,7 +77,7 @@
 .shop-cart {
   height: 42px;
   padding: 8px;
-  border-right: 1px solid black;
+  border-right: 1px solid #dbdbdb;
   @include breakpoint(i5-land) {
     padding: 7px;
     font-size: 20px;
@@ -96,6 +96,14 @@
 .secondary-head {
   background: #e3e3e3;
   padding: 10px;
+  @include breakpoint(tab-land) {
+    padding-top:12px;
+    padding-bottom:0px;
+  }
+  @include breakpoint(desktop) {
+    padding-top:20px;
+    padding-bottom:10px;
+  }
 }
 
 .row .first-nav {
@@ -125,8 +133,14 @@
 }
 
 .specials {
+   @include breakpoint(tablet) {
+    margin-left: -3%;
+  }
   @include breakpoint(tab-land) {
-    margin-left: 3%;
+    margin-left: 4%;
+  }
+  @include breakpoint(desktop) {
+    margin-left: 1%;
   }
 }
 
@@ -134,6 +148,17 @@
   padding: 10px;
 }
 
+.close-button {
+  @include breakpoint(tab-land) {
+    right: -6rem;
+  }
+   @include breakpoint(desktop) {
+    right: -3rem;
+  }
+  @include breakpoint(huge) {
+    right: 13%;
+  }
+}
 .move-image {
   position: absolute;
   margin-top: -71px;
@@ -146,11 +171,11 @@
   }
   @include breakpoint(desktop) {
     margin-top: -5%;
-    margin-left: 5%;
+    margin-left: 8%;
   }
   @include breakpoint(huge) {
     margin-top: -3%;
-    margin-left: 25%;
+    margin-left: 26%;
   }
 }
 
@@ -173,27 +198,42 @@
   display: none;
   @include breakpoint(tablet) {
     display: block;
-    padding: 10px 0;
+    // padding: 10px 0;
     // margin-bottom:-10px;
   }
   @include breakpoint(desktop) {
-    padding: 20px;
+    // padding: 20px;
+    // height:84px;
   }
 }
 
 .caret {
   position: absolute;
   top: 9px;
-  right: 65%;
+  right: 68%;
+  @include breakpoint(desktop) {
+    top: 22px;
+    right: 69%;
+  }
 }
 
 .caret-1 {
   position: absolute;
   top: 9px;
-  right: 24%;
+  right: 26%;
   -webkit-transition: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -webkit-transition: -webkit-transform 0.15s ease-in;
+  @include breakpoint(tablet) {
+    right: 36%;
+  }
+   @include breakpoint(tab-land) {
+    right: 43%;
+  }
+  @include breakpoint(desktop){
+    top:22px;
+    right:43%;
+  }
 }
 
 .active .caret-1 {
@@ -337,6 +377,9 @@
   @include breakpoint(tab-land) {
     top: 10px;
   }
+  // @include breakpoint(desktop) {
+  //   font-size: 18px;
+  // }
 }
 
 .hide-mobile {
@@ -375,7 +418,7 @@
     display: block;
   }
   @include breakpoint(desktop) {
-    margin-right: -1%;
+    margin-right: 5%;
   }
 }
 
@@ -390,7 +433,7 @@
   display: none;
   @include breakpoint(desktop) {
     display: block;
-    margin-left: 5%;
+    margin-left: -1%;
   }
 }
 
@@ -435,9 +478,9 @@ footer {
   @include breakpoint(tablet) {
     font-size: 14px;
   }
-  // @include breakpoint(desktop) {
-  //   font-size: 16px;
-  // }
+  @include breakpoint(desktop) {
+    margin-right:7%;
+  }
 }
 
 .list-1 li {
@@ -679,6 +722,10 @@ footer {
     width: 61%;
     margin-right: -5%;
   }
+  @include breakpoint(desktop) {
+   
+    margin-right: -3%;
+  }
 }
 
 .main p {
@@ -747,6 +794,9 @@ div.line-1 {
 
 .main-item {
   font-size: 12px;
+  a{
+    padding-left:29px;
+  }
   @include breakpoint(i6) {
     font-size: 14px;
   }
@@ -964,14 +1014,17 @@ div.line-1 {
   padding-left: 0.9375rem;
     padding-right: 0.9375rem;
 }
+@include breakpoint(tablet) {
+  padding-right: 0px;
+  padding-left: 6px;
+  width: 33.33333%
+}
 @include breakpoint(desktop) {
   padding-right: 0px;
   padding-left: 0px;
 }
 
-@include breakpoint(tablet) {
-  width: 33.33333%;
-}
+
 h2 {
       font-family: "Knockout 49 4r","HelveticaNeue-CondensedBold","Arial Narrow",Arial,sans-serif;
   @include breakpoint(i6-land) {
@@ -1005,7 +1058,14 @@ h2 {
 
 .pick:last-child {
   @include breakpoint(tablet) {
-    float: left !important;
+    // float: left !important;
+    position: relative;
+    left: -67%;
+  }
+    @include breakpoint(desktop) {
+    // float: left !important;
+    position: static;
+    left: 0;
   }
 }
 
@@ -1015,7 +1075,7 @@ h2 {
     width: 57%;
   }
   @include breakpoint(tablet) {
-    width: 68%;
+    width: 62%;
   }
   @include breakpoint(desktop) {
     font-size: 16px;
@@ -1032,15 +1092,40 @@ h2 {
     margin-right: -11%;
    }
    @include breakpoint(tablet) {
-     margin-top: -82%;
-    margin-right: -16%;
+     margin-top: -48%;
+    margin-right: -10%;
+    width:37%;
    }
    @include breakpoint(tab-land) {
-   margin-top: -42%;
-    margin-right: -22%;
+   margin-top: -31%;
+    margin-right: -12%;
    }
    @include breakpoint(desktop) {
-    margin-top: -43%;
+    width:45%;
+    margin-top: -42%;
+   }
+}
+
+.order-button.order-2 {
+  @include breakpoint(tablet) {
+    margin-top: -56%;
+  }
+  @include breakpoint(tab-land) {
+    margin-top: -37%;
+    margin-right: -12%;
+  }
+  @include breakpoint(desktop) {
+    margin-top: -41%;
+   }
+}
+.order-button.order-2.order-3 {
+  
+  @include breakpoint(tab-land) {
+    margin-top: -31%;
+    margin-right: -12%;
+  }
+  @include breakpoint(desktop) {
+    margin-top: -42%;
    }
 }
 .pick .order-button-1 {
@@ -1054,18 +1139,19 @@ h2 {
     margin-right: -44%;
    }
     @include breakpoint(tablet) {
-     margin-top: -48%;
-     margin-right: -12%;
+     margin-top: -31%;
+     margin-right: -17%;
      width:33.3333%;
    }
    @include breakpoint(tab-land) {
-   margin-top: -27%;
-    margin-right: -23%;
+   margin-top: -25%;
+    margin-right: -25%;
     width: 42.3333%;
    }
    @include breakpoint(desktop) {
     width: 50%;
-    margin-right: -30%;
+    margin-right: -26%;
+    margin-top: -27%;
    }
 }
 // .pick .order-button-2 {
@@ -1090,6 +1176,10 @@ h2 {
    @include breakpoint(i5-land) {
     width: 100%;
    }
+    @include breakpoint(tablet) {
+    padding-left: 0;
+    padding-right: 0;
+   }
 }
 
 .pick .description {
@@ -1100,6 +1190,10 @@ h2 {
     font-size: 14px;
     line-height: 0.6;
     text-decoration: underline;
+   }
+   @include breakpoint(tablet) {
+    padding-left: 0;
+    padding-right: 0;
    }
 
 }
@@ -1132,4 +1226,88 @@ h2 {
 
 .selected {
 font-weight: bold;
+}
+
+.user-message {
+  background: #f1f1f1;
+  margin-top:15px;
+    padding: 16px;
+    margin-bottom: 24px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width:1180px;
+}
+
+.dollar-sign {
+  @include breakpoint(tab-land) {
+    margin-left: 13px;
+  }
+ 
+  @include breakpoint(desktop) {
+     margin-left:26px;
+   
+  }
+
+}
+.cart {
+  @include breakpoint(tablet) {
+  border-left: 1px solid #dbdbdb;
+    padding-top: 2px;
+  }
+  @include breakpoint(tab-land) {
+    margin-right: 5%;
+    width:20%;
+    padding-top:7px;
+    height: 56px;
+      .zero-value {
+    font-size: 20px;
+  }
+  }
+  @include breakpoint(desktop) {
+    padding-top:23px;
+    height: 84px;
+     border-right: 1px solid #dbdbdb;
+      .zero-value {
+    font-size: 25px;
+  }
+  }
+}
+
+@mixin border-style {
+      border-left: 1px solid #dbdbdb;
+    padding-top: 5px;
+    height: 57px;
+}
+
+.order-start, .sign-in {
+    @include border-style;
+    @include breakpoint(desktop) {
+      padding-top:18px;
+      height:85px;
+    a {
+      font-size: 18px;
+    }
+}
+}
+
+.sign-in {
+  @include breakpoint(tab-land) {
+    width:26%;
+  }
+}
+
+.sign-in.active {
+  background: #dbdbdb;
+}
+
+.create-sign {
+  background: #dbdbdb;
+}
+
+.your-order {
+  @include breakpoint(tablet) {
+    margin-left:13%;
+  }
+  @include breakpoint(tab-land) {
+    margin-left: 16%;
+  }
 }
