@@ -11,7 +11,12 @@
     }
   }
   @else if $point==tab-land {
-    @media (min-width: 1023px) {
+    @media (min-width: 960px) {
+      @content ;
+    }
+  }
+  @else if $point==galaxy-tab {
+    @media (min-width: 799px) {
       @content ;
     }
   }
@@ -21,7 +26,7 @@
     }
   }
   @else if $point==plus-land {
-    @media (min-width: 735px) {
+    @media (min-width: 700px) {
       @content ;
     }
   }
@@ -36,16 +41,16 @@
     }
   }
   @else if $point==i6 {
-    @media (min-width: 374px) {
+    @media (min-width: 359px) {
       @content ;
     }
   }
   @else if $point==i5-land {
-    @media (min-width: 567px) {
+    @media (min-width: 480px) {
       @content ;
     }
   }
-  @else if $point==i5 {
+     @else if $point==i5 {
     @media (max-width: 320px) {
       @content ;
     }
@@ -177,6 +182,10 @@
     margin-top: -3%;
     margin-left: 26%;
   }
+  // @include breakpoint(em(1919)) {
+  //       margin-top: -7%;
+  //   margin-left: 3%;
+  // }
 }
 
 @include breakpoint(tablet) {
@@ -211,6 +220,12 @@
   position: absolute;
   top: 9px;
   right: 68%;
+  @include breakpoint(galaxy-tab) {
+    right: 63%;
+  }
+  @include breakpoint(tab-land) {
+    right: 68%;
+  }
   @include breakpoint(desktop) {
     top: 22px;
     right: 69%;
@@ -794,9 +809,7 @@ div.line-1 {
 
 .main-item {
   font-size: 12px;
-  a{
-    padding-left:29px;
-  }
+ 
   @include breakpoint(i6) {
     font-size: 14px;
   }
@@ -967,7 +980,6 @@ div.line-1 {
   @include breakpoint(i5){
     display: none;
   }
- 
   @include breakpoint(i6){
     display: none;
   }
@@ -1289,7 +1301,21 @@ font-weight: bold;
 }
 }
 
+.order-start {
+  @include breakpoint(galaxy-tab) {
+     width:38.33%;
+     padding-top: 15px;
+  }
+   @include breakpoint(tab-land) {
+     width:33.33%;
+     padding-top: 5px;
+  }
+}
+
 .sign-in {
+   @include breakpoint(galaxy-tab) {
+    width:35.33%;
+  }
   @include breakpoint(tab-land) {
     width:26%;
   }
@@ -1307,7 +1333,11 @@ font-weight: bold;
   @include breakpoint(tablet) {
     margin-left:13%;
   }
+   @include breakpoint(galaxy-tab) {
+    margin-left: 10%;
+  }
   @include breakpoint(tab-land) {
     margin-left: 16%;
   }
+ 
 }
