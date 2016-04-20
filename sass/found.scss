@@ -5,6 +5,11 @@
       @content ;
     }
   }
+   @if $point==wider {
+    @media (min-width: 1200px) {
+      @content ;
+    }
+  }
   @if $point==desktop {
     @media (min-width: 1080px) {
       @content ;
@@ -84,6 +89,7 @@
   padding: 8px;
   border-right: 1px solid #dbdbdb;
   @include breakpoint(i5-land) {
+    // height: 42px;
     padding: 7px;
     font-size: 20px;
     padding-left: 23px;
@@ -149,6 +155,12 @@
   }
 }
 
+.off-canvas.position-right.is-open {
+  @include breakpoint(tablet){
+    display: none;
+    aria-hidden: true;
+  }
+}
 .side-menu {
   padding: 10px;
 }
@@ -174,13 +186,18 @@
     margin-top: -57px;
     margin-left: 14px;
   }
-  @include breakpoint(desktop) {
+  
+  @include breakpoint(wider) {
+     margin-top: -6%;
+    margin-left: 0%;
+  }
+ @include breakpoint(desktop) {
     margin-top: -5%;
     margin-left: 8%;
   }
   @include breakpoint(huge) {
     margin-top: -3%;
-    margin-left: 26%;
+    margin-left: 25%;
   }
   // @include breakpoint(em(1919)) {
   //       margin-top: -7%;
@@ -242,9 +259,13 @@
   @include breakpoint(tablet) {
     right: 36%;
   }
+   @include breakpoint(galaxy-tab) {
+    right: 31%;
+  }
    @include breakpoint(tab-land) {
     right: 43%;
   }
+
   @include breakpoint(desktop){
     top:22px;
     right:43%;
@@ -841,7 +862,7 @@ div.line-1 {
 .start-order-1 {
   font-size: 10px;
   text-align: right;
-  border-right: 1px solid black;
+ border-right: 1px solid #dbdbdb;
   padding-top: 6px;
 }
 
@@ -875,7 +896,7 @@ div.line-1 {
 
 .shop-cart-1 {
   padding-top: 8px;
-  border-right: 1px solid black;
+ border-right: 1px solid #dbdbdb;
   height: 54px;
   padding-left: 16px;
   font-size: 24px;
@@ -895,7 +916,7 @@ div.line-1 {
 
 .favorite-section {
   border: 1px solid black;
-  margin-top: 15px;
+  margin-top: 45px;
 }
 
 .fav-heart {
@@ -1310,6 +1331,9 @@ font-weight: bold;
      width:33.33%;
      padding-top: 5px;
   }
+  @include breakpoint(desktop) {
+    padding-top:16px;
+  }
 }
 
 .sign-in {
@@ -1340,4 +1364,44 @@ font-weight: bold;
     margin-left: 16%;
   }
  
+}
+
+.make-favorite {
+  position: relative;
+    top: -60px;
+    left: 71%;
+    @include breakpoint(i5-land) {
+    top: -177px;
+    left: 89%;
+    }
+}
+.fa-heart.heart-fill, .favorite-message {
+  display: none;
+}
+
+.favorite-message {
+  font-size:14px;
+  background: #00FF00;
+  // width:100%;
+  padding: 5px;
+}
+
+.big-menu {
+ padding-left: 0;
+ padding-right: 0;
+}
+
+.free-side {
+  background: #ffffff;
+  width:30%;
+  line-height: 15px;
+    font-size: 14px;
+}
+
+.dashboard {
+  margin-left: -7px;
+}
+.number {
+  font-size:18px;
+  padding-right:14px;
 }

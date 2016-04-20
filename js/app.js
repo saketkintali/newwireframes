@@ -112,6 +112,15 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".empty-heart").click(function(){
+        $(".heart-fill").show();
+        $(".favorite-message").show();
+        $('.empty-heart').hide();
+
+    });
+});
+
 function page1() {
     window.location.href="createaccount-step1.html"
 }
