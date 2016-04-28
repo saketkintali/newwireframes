@@ -196,8 +196,8 @@
     margin-left: 8%;
   }
   @include breakpoint(huge) {
-    margin-top: -3%;
-    margin-left: 25%;
+    margin-top: -4%;
+    margin-left: 14%;
   }
   // @include breakpoint(em(1919)) {
   //       margin-top: -7%;
@@ -1366,13 +1366,20 @@ font-weight: bold;
  
 }
 
-.make-favorite {
-  position: relative;
-    top: -60px;
-    left: 71%;
+.make-favorite  {
+  position: absolute;
+    // top: -60px;
+    // left: 71%;
+    top:25%;
+    left:24%;
     @include breakpoint(i5-land) {
     top: -177px;
     left: 89%;
+    }
+    @include breakpoint(desktop) {
+     
+    top: 41%;
+    left: 46%;
     }
 }
 .fa-heart.heart-fill, .favorite-message {
@@ -1393,9 +1400,20 @@ font-weight: bold;
 
 .free-side {
   background: #ffffff;
-  width:30%;
+  width:27%;
   line-height: 15px;
     font-size: 14px;
+    @include breakpoint(tablet) {
+        width: 23%;
+    line-height: 18px;
+    font-size: 17px;
+  }
+    @include breakpoint(desktop) {
+      width:30%;
+      line-height:23px;
+      font-size:18px;
+      // width:42%;
+    }
 }
 
 .dashboard {
@@ -1404,4 +1422,33 @@ font-weight: bold;
 .number {
   font-size:18px;
   padding-right:14px;
+  @include breakpoint(tablet) {
+    font-size: 20px;
+  }
+  @include breakpoint(desktop) {
+    font-size:30px;
+    padding-right: 20px;
+  }
+}
+
+.big-menu a {
+  @include breakpoint(tablet) {
+    font-size: 20px;
+  }
+  @include breakpoint(desktop) {
+    font-size:30px;
+  }
+}
+
+.dash-menu {
+  margin-left: -4%;
+  @include breakpoint(desktop) {
+    margin-left: -3%;
+  }
+}
+
+.dash-rewards {
+  @include breakpoint(desktop) {
+    margin-left: -7%;
+  }
 }
